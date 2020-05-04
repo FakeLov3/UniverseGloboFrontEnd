@@ -1,5 +1,6 @@
 /* eslint-disable no-lone-blocks */
 import React from "react";
+import './styles.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
 import Esporte from "./pages/wizard/esporte/Esporte";

@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import Wizard from "../styled";
+import { NovelaCheck } from "../styled";
 
 // import { Container } from './styles';
 
@@ -13,7 +13,7 @@ function Genero() {
     history.push("/jornal");
   };
   return (
-    <Wizard
+    <NovelaCheck
       titulo="GShow"
       descricao="Qual genero de Novelas?"
       onClickSim={handleClickSim}

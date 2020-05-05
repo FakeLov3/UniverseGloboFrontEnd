@@ -6,10 +6,10 @@ import Wizard from "./styled";
 function BBB() {
   const history = useHistory();
   const handleClickSim = () => {
-    history.push("/inicio");
+    history.push("/home");
   };
   const handleClickNao = () => {
-    history.push("/inicio");
+    history.push("/home");
   };
   return (
     <Wizard

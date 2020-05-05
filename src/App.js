@@ -1,6 +1,5 @@
 /* eslint-disable no-lone-blocks */
 import React from "react";
-import './styles.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
 import Esporte from "./pages/wizard/esporte/Esporte";
@@ -18,7 +17,9 @@ import Genero from "./pages/wizard/novela/Genero";
 import EpocaAtual from "./pages/wizard/novela/EpocaAtual";
 import VideoShow from "./pages/wizard/VideoShow";
 import BBB from "./pages/wizard/BBB";
+import Blocos from "./pages/blocos";
 import { ContainerHome } from "./pages/wizard/styled";
+import "./app.css";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/home" component={Blocos} />
           <Route path="/esporte" component={Esporte} />
           <Route path="/futebol" component={Futebol} />
           <Route path="/time" component={Time} />

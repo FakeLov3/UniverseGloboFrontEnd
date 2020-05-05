@@ -8,7 +8,7 @@ const Home = () => {
     history.push("/esporte");
   };
   const handleClickNao = () => {
-    history.push("/esporte");
+    history.push("/home");
   };
   return (
     <BemVindo

@@ -10,7 +10,7 @@ function EpocaAtual() {
     history.push("/genero");
   };
   const handleClickNao = () => {
-    history.push("/jornal");
+    history.push("/genero");
   };
   return (
     <Wizard
@@ -18,6 +18,8 @@ function EpocaAtual() {
       descricao="Você gosta de Novelas de Época ou Atuais?"
       onClickSim={handleClickSim}
       onClickNao={handleClickNao}
+      sim="Epoca"
+      nao="Atual"
     />
   );
 }

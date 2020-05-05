@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import Wizard from "../styled";
+import { TimeCheck } from "../styled";
 // import { Container } from './styles';
 
 function Time() {
@@ -12,7 +12,7 @@ function Time() {
     history.push("/novela");
   };
   return (
-    <Wizard
+    <TimeCheck
       titulo="GloboEsporte"
       descricao="Torce para qual time?"
       onClickSim={handleClickSim}

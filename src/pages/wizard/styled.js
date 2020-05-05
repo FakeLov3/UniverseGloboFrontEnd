@@ -1,19 +1,25 @@
 import React from "react";
 import styled from "styled-components";
+import CheckBoxNovela from "./novela/checkbox";
+import CheckBoxTime from "./esporte/checkboxtime";
+import CheckBoxInternacional from "./esporte/checkboxinternacional";
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
   align-content: center;
   align-items: center;
   margin-top: 10px;
+  color: white;
 `;
 export const ContainerTop = styled.div`
   display: flex;
   align-content: center;
   flex-direction: column;
   margin-bottom: 5px;
+  margin-top: 60px;
 `;
 export const Titulo = styled.h3`
   align-self: center;
@@ -50,15 +56,17 @@ export const Botao = styled.button`
 `;
 
 export const ContainerHome = styled.div`
-  width: 400px;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-content: center;
 
   align-self: center;
+
+  align-items: center;
+  justify-content: center;
+
   background-color: #1f1f1f;
-  height: 100vh;
-  margin-top: 10px;
 `;
 export const Navegacao = ({ titulo, descricao }) => (
   <ContainerTop>
@@ -66,14 +74,75 @@ export const Navegacao = ({ titulo, descricao }) => (
     <Descricao>{descricao}</Descricao>
   </ContainerTop>
 );
-export const Bottom = ({ sim, nao, onClickSim, onClickNao }) => (
-  <ContainerBtn>
-    <Botao onClick={onClickNao}>{nao}</Botao>
-    <Botao onClick={onClickSim}>{sim}</Botao>
-  </ContainerBtn>
+export const NovelaCheck = ({
+  titulo,
+  descricao,
+  onClickSim,
+  onClickNao,
+  sim = "Sim",
+  nao = "Não",
+}) => (
+  <Container>
+    <ContainerTop>
+      <Titulo>{titulo}</Titulo>
+      <Descricao>{descricao}</Descricao>
+    </ContainerTop>
+    <CheckBoxNovela />
+    <ContainerBtn>
+      <Botao onClick={onClickNao}>{nao}</Botao>
+      <Botao onClick={onClickSim}>{sim}</Botao>
+    </ContainerBtn>
+  </Container>
+);
+export const TimeCheck = ({
+  titulo,
+  descricao,
+  onClickSim,
+  onClickNao,
+  sim = "Sim",
+  nao = "Não",
+}) => (
+  <Container>
+    <ContainerTop>
+      <Titulo>{titulo}</Titulo>
+      <Descricao>{descricao}</Descricao>
+    </ContainerTop>
+    <CheckBoxTime />
+    <ContainerBtn>
+      <Botao onClick={onClickNao}>{nao}</Botao>
+      <Botao onClick={onClickSim}>{sim}</Botao>
+    </ContainerBtn>
+  </Container>
+);
+export const TimeInternacionalCheck = ({
+  titulo,
+  descricao,
+  onClickSim,
+  onClickNao,
+  sim = "Sim",
+  nao = "Não",
+}) => (
+  <Container>
+    <ContainerTop>
+      <Titulo>{titulo}</Titulo>
+      <Descricao>{descricao}</Descricao>
+    </ContainerTop>
+    <CheckBoxInternacional />
+    <ContainerBtn>
+      <Botao onClick={onClickNao}>{nao}</Botao>
+      <Botao onClick={onClickSim}>{sim}</Botao>
+    </ContainerBtn>
+  </Container>
 );
 
-export default function Wizard({ titulo, descricao, onClickSim, onClickNao }) {
+export default function Wizard({
+  titulo,
+  descricao,
+  onClickSim,
+  onClickNao,
+  sim = "Sim",
+  nao = "Não",
+}) {
   return (
     <Container>
       <ContainerTop>
@@ -81,8 +150,8 @@ export default function Wizard({ titulo, descricao, onClickSim, onClickNao }) {
         <Descricao>{descricao}</Descricao>
       </ContainerTop>
       <ContainerBtn>
-        <Botao onClick={onClickNao}>Não</Botao>
-        <Botao onClick={onClickSim}>Sim</Botao>
+        <Botao onClick={onClickNao}>{nao}</Botao>
+        <Botao onClick={onClickSim}>{sim}</Botao>
       </ContainerBtn>
     </Container>
   );

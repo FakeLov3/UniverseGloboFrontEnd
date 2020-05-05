@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import Wizard from "../styled";
+import { TimeInternacionalCheck } from "../styled";
 // import { Container } from './styles';
 
 function Internacional() {
@@ -12,7 +12,7 @@ function Internacional() {
     history.push("/novela");
   };
   return (
-    <Wizard
+    <TimeInternacionalCheck
       titulo="GloboEsporte"
       descricao="Torce para algum time internacional?"
       onClickSim={handleClickSim}

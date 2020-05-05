@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "titulo": "Brasil tem 7.288 mortes e 105.222 casos de coronavírus neste 4 de maio",
+    "descricao": "Só nas últimas 24 hora foram registrados 421 óbitos e 4.970 novos casos do novo coronavírus, segundo o Ministério da Saúde",
+    "imagem": "https://catracalivre.com.br/wp-content/uploads/2020/05/49847640082-f238bd39ce-k-910x607.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Defesa diz ao STF que abre mão do sigilo do depoimento de Moro à PF",
+    "descricao": "Em documento enviado ao ministro Celso de Mello, relator do caso no Supremo, advogados do ex-ministro dizem querer evitar 'interpretações dissociadas de todo o contexto das declarações'.",
+    "imagem": "https://s2.glbimg.com/hI5cAxDaXHw2JoKYBTw4rsvTro0=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/F/A/AEdBuCQ9aP0q3RZdoArg/8524533.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "Golpe para quê? Aliança militar-miliciana já está no poder com Bolsonaro",
+    "descricao": "Pensando bem, não faz muito sentido a gente ficar aqui discutindo se o golpe será miliciano ou militar.Após a micareta golpista de domingo, em que Bolsonaro afrontou as instituições, e não houve nenhuma reação do Judiciário e do Legislativo, ago",
+    "imagem": "https://conteudo.imguol.com.br/c/interacao/facebook/uol-noticias-600px.jpg"
+  },
+  {
+    "id": 4,
+    "titulo": "Juiz que determinou 'lockdown' na Grande São Luís relata ameaças de morte",
+    "descricao": "Entidades emitiram nota em solidariedade a Douglas Martins, que disse não estar com medo das ameaças.",
+    "imagem": "https://s2.glbimg.com/IohAgJe81AA2437rO57fHkbSmVA=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/v/N/cGWC7KSimQHPdMRN96ng/douglas-martins.jpg"
+  },
+  {
+    "id": 5,
+    "titulo": "Em primeiro ato, novo diretor da PF anuncia troca de diretor do Rio, como Bolsonaro havia mandado | Revista Fórum",
+    "descricao": "Mesmo sem Ramagem, Bolsonaro conseguiu aliado para promover mudanças na estrutura da Polícia Federal",
+    "imagem": "https://cdn.revistaforum.com.br/wp-content/uploads/2020/03/49691394283-9759862904-c.jpg"
+  }
+]

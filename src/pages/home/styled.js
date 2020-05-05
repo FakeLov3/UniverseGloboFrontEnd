@@ -5,6 +5,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
   align-content: center;
   align-items: center;
 `;
@@ -13,6 +14,7 @@ const ContainerTop = styled.div`
   align-content: center;
   flex-direction: column;
   margin-bottom: 5px;
+  margin-top: 60px;
 `;
 const Titulo = styled.h3`
   align-self: center;
